@@ -2,6 +2,7 @@
   "name": "dragpoetry",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://jerome.cloud/drag-poetry",
   "dependencies": {
     "react": "^16.6.3",
     "react-beautiful-dnd": "^10.0.2",
@@ -11,7 +12,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -22,5 +25,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
