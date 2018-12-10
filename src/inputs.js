@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export class LineInput extends Component {
     constructor(props) {
       super(props);
-      this.state = {value: ''};
+      this.state = {value: props.item.content};
       this.item = props.item;
       this.parent = props.parent;
       this.handleChange = this.handleChange.bind(this);

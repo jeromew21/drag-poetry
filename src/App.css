@@ -1,15 +1,36 @@
+body {
+  padding: 10px;
+}
+
 .lineInput {
   background-color: grey;
   border: none;
-  width: 420px;
+  width: 475px;
   padding: 0.2em;
   font-size: 1.2em;
+  transition: 0.1s;
+  border-radius: 3px;
 }
 
 .lineInput:hover, .lineInput:focus {
   background-color: aliceblue;
+  transition: 0.1s;
 }
 
-body {
-  padding: 10px;
+.itemsContainer {
+  width: auto;
+  padding: 1em;
+  height: 90vh;
+  overflow: auto;
+}
+
+.poem {
+  height: 400px;
+  overflow: auto;
+  font-size: 2em;
+  font-family: serif;
+}
+
+button.btn {
+  margin: 4px;
 }
